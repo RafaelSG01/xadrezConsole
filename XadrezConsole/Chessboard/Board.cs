@@ -21,5 +21,11 @@ namespace XadrezConsole.Chessboard
         {
             return pieces[line, column];
         }
+
+        public void putPiece(Piece p, Position pos)
+        {
+            pieces[pos.line, pos.col] = p;
+            p.position = pos;
+        }
     }
 }
