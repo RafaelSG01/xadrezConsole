@@ -9,7 +9,9 @@ namespace XadrezConsole
         {
             Board board = new Board(8, 8);
 
-            Console.WriteLine("Posição: " + board);
+            Screen.PrintScreen(board);
+
+            Console.ReadLine();
         }
     }
 }
